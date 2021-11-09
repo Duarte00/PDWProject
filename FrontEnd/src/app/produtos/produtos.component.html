@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Lista de Produtos</h2>
+    <div class="table-responsive">
+    <table class="table" *ngIf='produtos && produtos.length'>
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>Nome</th> Nome
+    <th>Categoria</th>
+    <th>Quantidade</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor='let produto of produtos'>
+    <td>{{produto.ID}}</td>
+    <td>{{produto.Nome}}</td>
+    <td>{{produto.Categoria}}</td>
+    <td>{{produto.Quantidade}}</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
